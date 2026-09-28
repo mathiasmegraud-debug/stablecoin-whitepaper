@@ -3,45 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TRON Stablecoin Project — White Paper</title>
+<title>ASTRAL Stablecoin — White Paper</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:40px auto;padding:0 22px;line-height:1.65;color:#202124}h1{line-height:1.2}h2{margin-top:34px}code{word-break:break-all}table{border-collapse:collapse;width:100%;margin:15px 0}td{border:1px solid #ddd;padding:9px}td:first-child{font-weight:700;background:#f6f6f6;width:32%}.notice{padding:15px;border:1px solid #ddd;background:#fafafa}li{margin:6px 0}
+body{font-family:Arial,Helvetica,sans-serif;max-width:920px;margin:40px auto;padding:0 22px;line-height:1.65;color:#202124}h1{line-height:1.2}h2{margin-top:34px}code{word-break:break-all}.hero{padding:26px 0}.notice{padding:16px;border:1px solid #ddd;background:#fafafa;margin:18px 0}.warning{padding:16px;border:1px solid #e0c46c;background:#fffaf0;margin:18px 0}table{border-collapse:collapse;width:100%;margin:15px 0}td{border:1px solid #ddd;padding:9px}td:first-child{font-weight:700;background:#f6f6f6;width:32%}li{margin:6px 0}.muted{color:#666;font-size:.92em}a{color:#165dbe}
 </style>
 </head>
 <body>
-<h1>TRON Stablecoin Project</h1>
+<div class="hero">
+<h1>ASTRAL Stablecoin</h1>
 <p><strong>Technical White Paper — Draft v1.0</strong></p>
-<div class="notice"><strong>Disclosure:</strong> This document describes a project objective. The current token is market-priced. It is not represented here as currently backed by USD reserves or guaranteed to remain at a fixed price.</div>
+<p class="muted">TRON / TRC-20 digital asset project</p>
+</div>
+<div class="warning"><strong>Important identity and stability disclosure:</strong> ASTRAL Stablecoin is an independent project and is not affiliated with, endorsed by, or issued by Tether Limited. The on-chain token name and symbol currently associated with the deployed contract are <strong>Tether USD</strong> and <strong>USDT-</strong>; these are recorded here for technical identification only. The project should not be confused with the separate Tether/USDT asset.</div>
+<div class="notice"><strong>Stability disclosure:</strong> The project's long-term objective is to develop a stable digital asset targeting a reference value of 1 USD. The current token is market-priced. This document does not claim that the current token is backed by USD reserves, redeemable for 1 USD, or guaranteed never to vary in market price.</div>
+
 <h2>Abstract</h2>
-<p>TRON Stablecoin Project is a TRC-20 digital asset initiative designed with the long-term objective of providing a stable and accessible unit of value for payments, transfers and decentralized applications on the TRON network. The project focuses on transparent token issuance, predictable on-chain behavior and a roadmap toward a robust stability mechanism.</p>
+<p>ASTRAL Stablecoin is a TRC-20 digital asset project on the TRON network. Its long-term objective is to develop an accessible digital asset designed around a 1 USD reference value for payments, transfers and decentralized applications.</p>
+<p>The project is being developed in stages. The initial stage focuses on transparent token information, decentralized liquidity, technical documentation and security. A future stability architecture may incorporate reserves or collateral, redemption mechanisms, price oracles, risk controls and ongoing transparency reporting. These mechanisms will only be described as operational after they have actually been implemented and documented.</p>
+
 <h2>1. Project Overview</h2>
-<p>The project seeks to build stable digital-asset infrastructure around the TRON ecosystem. The initial token is implemented as a TRC-20 smart contract and is intended to support transfers, liquidity provision and future integrations with decentralized applications.</p>
-<p>The project is guided by transparency, predictable token economics, security, accessibility and responsible communication.</p>
+<p>ASTRAL Stablecoin aims to build stable digital-asset infrastructure around the TRON ecosystem. The initial token is implemented as a TRC-20 smart contract and is intended to support transfers, liquidity provision and future integrations with decentralized applications.</p>
+<p>The project is guided by five principles: transparency, predictable token economics, security, accessibility and responsible communication.</p>
+
 <h2>2. Token Specification</h2>
-<table><tr><td>Network</td><td>TRON</td></tr><tr><td>Standard</td><td>TRC-20</td></tr><tr><td>Contract</td><td><code>TTDs25SXfvxUpQcVhjSLbzBETNScSdMrfy</code></td></tr><tr><td>Supply</td><td>1,000,000,000</td></tr><tr><td>Decimals</td><td>6</td></tr><tr><td>Current status</td><td>Market-priced; fixed-value guarantee not currently claimed</td></tr></table>
+<table>
+<tr><td>Project</td><td>ASTRAL Stablecoin</td></tr>
+<tr><td>Network</td><td>TRON</td></tr>
+<tr><td>Standard</td><td>TRC-20</td></tr>
+<tr><td>Contract</td><td><code>TTDs25SXfvxUpQcVhjSLbzBETNScSdMrfy</code></td></tr>
+<tr><td>On-chain token name</td><td>Tether USD</td></tr>
+<tr><td>On-chain token symbol</td><td>USDT-</td></tr>
+<tr><td>Total supply</td><td>1,000,000,000</td></tr>
+<tr><td>Decimals</td><td>6</td></tr>
+<tr><td>Founder / project identity</td><td>Satoshi napasdmoto</td></tr>
+</table>
+<p class="muted">The token name, symbol, supply and decimals are on-chain properties of the deployed contract. TRONSCAN states that these fields cannot be changed through its token-information update form.</p>
+
 <h2>3. Stability Objective</h2>
-<p>The long-term objective is to maintain the token near a defined reference value, potentially 1 USD, through a transparent and verifiable stability architecture.</p>
-<p>A stablecoin requires more than a token contract and a liquidity pool. Depending on the model selected, stability may require reserves, over-collateralization, redemption, price oracles, risk controls and ongoing monitoring. Until such a mechanism is operational and disclosed, the token may fluctuate materially.</p>
+<p>The long-term objective of ASTRAL Stablecoin is to maintain a market value close to a defined reference value of 1 USD through a transparent and verifiable stability architecture.</p>
+<p>A stablecoin requires more than a token contract and a liquidity pool. Depending on the selected model, stability may require reserves, over-collateralization, redemption, trusted or decentralized price oracles, liquidity management, risk limits and continuous monitoring.</p>
+<p>Until such mechanisms are operational and disclosed, ASTRAL Stablecoin remains a market-priced crypto asset and its price can move above or below the intended reference value.</p>
+
 <h2>4. Proposed Stability Architecture</h2>
-<ul><li><strong>Phase A:</strong> deploy and verify the TRC-20 contract, publish documentation and establish initial decentralized liquidity.</li><li><strong>Phase B:</strong> define the reference asset, reserve/collateral model, minting and redemption rules, oracle design and risk controls.</li><li><strong>Phase C:</strong> test and independently review the stability system, activate it only after appropriate validation, and publish recurring transparency information.</li></ul>
+<ul>
+<li><strong>Phase 1 — Foundation:</strong> document and verify the token contract, publish project information, establish official communication channels and begin initial decentralized liquidity.</li>
+<li><strong>Phase 2 — Stability design:</strong> define the 1 USD reference, select the reserve/collateral model, define minting and redemption rules, establish oracle requirements and define risk controls.</li>
+<li><strong>Phase 3 — Testing and review:</strong> test the stability system, conduct security review and independently assess critical contracts and mechanisms before activation.</li>
+<li><strong>Phase 4 — Controlled deployment:</strong> activate the stability system only after the relevant infrastructure is funded, tested and documented.</li>
+<li><strong>Phase 5 — Transparency:</strong> publish recurring information on reserves/collateral, supply, liquidity and material protocol changes where applicable.</li>
+</ul>
+
 <h2>5. Token Economics</h2>
-<p>The initial supply is 1,000,000,000 tokens with 6 decimals. Any future minting, burning, migration or supply-management mechanism must be explicitly documented and, where technically applicable, enforced by the smart contract.</p>
-<p>Decentralized liquidity determines an initial market ratio but does not itself guarantee a stable value.</p>
+<p>The current deployed token has a total supply of 1,000,000,000 units and 6 decimals. The current supply should be treated as the supply disclosed by the deployed contract.</p>
+<p>Any future minting, burning, migration or supply-management mechanism must be explicitly documented and, where technically applicable, enforced by the smart contract.</p>
+<p>Initial decentralized liquidity establishes a market ratio between assets in the pool. Liquidity alone does not constitute a guarantee of a fixed token price.</p>
+
 <h2>6. Liquidity and Market Mechanics</h2>
-<p>A decentralized pool containing the project token and a reference asset such as USDT allows market participants to trade against pool reserves. With limited liquidity, relatively small trades can cause significant price movements. A liquidity pool should therefore not be represented as a reserve guarantee.</p>
+<p>A decentralized pool containing ASTRAL Stablecoin and a reference asset such as USDT allows market participants to trade against pool reserves. If liquidity is small, relatively small trades can cause substantial price movements.</p>
+<p>The project's intended initial liquidity may be established progressively. Any published pool amount will be reported as liquidity, not as a USD reserve backing the token, unless a separate reserve system actually exists.</p>
+
 <h2>7. Smart Contract and Security</h2>
-<p>The token uses the TRC-20 standard on TRON. Security priorities include minimizing unnecessary permissions, verifying source code where possible, documenting privileged roles, protecting administrative keys and conducting independent security review before introducing complex stability functions.</p>
+<p>ASTRAL Stablecoin uses the TRC-20 standard on TRON. Security priorities include minimizing unnecessary permissions, verifying source code where possible, documenting privileged roles, protecting administrative keys and conducting independent security review before introducing complex stability functions.</p>
+<p>Future stability contracts, if deployed, should be separately documented and reviewed before users are asked to rely on them.</p>
+
 <h2>8. Transparency</h2>
-<ul><li>Publish the contract address and verified source code where available.</li><li>Publish token supply and relevant token-management rules.</li><li>Publish material protocol changes.</li><li>Disclose reserve or collateral arrangements before representing them as operational.</li><li>Publish recurring transparency information once a reserve/stability mechanism exists.</li></ul>
+<ul>
+<li>Publish the contract address and verified source code where available.</li>
+<li>Publish token supply and token-management rules.</li>
+<li>Publish material protocol changes.</li>
+<li>Disclose reserve or collateral arrangements before representing them as operational.</li>
+<li>Publish recurring transparency information once a reserve/stability mechanism exists.</li>
+<li>Clearly distinguish the ASTRAL project from unrelated tokens or issuers, including Tether.</li>
+</ul>
+
 <h2>9. Roadmap</h2>
-<ul><li><strong>Foundation:</strong> documentation, official communication channels, contract verification and initial liquidity.</li><li><strong>Infrastructure:</strong> technical review, stability/redemption design and security testing.</li><li><strong>Stability System:</strong> testing, independent review and controlled deployment.</li><li><strong>Ecosystem:</strong> integrations, liquidity improvements and recurring transparency reports.</li></ul>
+<ul>
+<li><strong>Stage 1 — Launch:</strong> finalize project documentation, publish the official website, establish official community channels, verify the contract source where possible and prepare initial liquidity.</li>
+<li><strong>Stage 2 — Community:</strong> launch official communication channels, publish educational material, collect community feedback and document project governance.</li>
+<li><strong>Stage 3 — Stability research:</strong> complete the technical design for the reference price, reserves/collateral, minting, redemption, oracle infrastructure and emergency controls.</li>
+<li><strong>Stage 4 — Security:</strong> test the proposed stability architecture and commission an independent security review before relying on it for stability claims.</li>
+<li><strong>Stage 5 — Stability deployment:</strong> deploy and monitor the stability mechanism under controlled conditions and publish its operating rules.</li>
+<li><strong>Stage 6 — Ecosystem:</strong> expand TRON integrations, improve liquidity and publish recurring transparency reports.</li>
+</ul>
+
 <h2>10. Risks</h2>
-<p>Users should consider market, liquidity, smart-contract, oracle, reserve, regulatory and operational risks. Cryptocurrency markets can be volatile and users may lose some or all of the value they commit.</p>
+<p><strong>Market risk:</strong> the token may trade above or below its intended reference value.</p>
+<p><strong>Liquidity risk:</strong> users may be unable to trade significant amounts without substantial price impact.</p>
+<p><strong>Smart-contract risk:</strong> bugs, vulnerabilities or compromised administrative keys could cause loss or disruption.</p>
+<p><strong>Oracle risk:</strong> incorrect or manipulated price data could affect a future stability mechanism.</p>
+<p><strong>Reserve risk:</strong> if reserves or collateral are used, their value, liquidity, custody and verification are material risks.</p>
+<p><strong>Regulatory risk:</strong> digital assets and stablecoins may be regulated differently across jurisdictions.</p>
+<p><strong>Operational risk:</strong> deployment, administration, communication and infrastructure failures may affect the project.</p>
+
 <h2>11. Governance and Administration</h2>
-<p>Material administrative privileges and any ability to change token parameters should be documented. Changes affecting supply, redemption, reserves or stability should be clearly communicated.</p>
-<h2>12. Legal and Disclosure Notice</h2>
-<p>This white paper describes a technical project and its intended development direction. It is not an offer, solicitation, financial guarantee or promise of a fixed market price.</p>
-<p>The project does not currently claim that the token is backed by US dollars, that each token is redeemable for one US dollar, or that its market price can never vary unless those mechanisms have actually been implemented, funded and publicly documented.</p>
+<p>The project intends to document material administrative privileges and any ability to change token parameters. Changes affecting supply, redemption, reserves or stability should be communicated clearly.</p>
+<p>The project will not describe a centralized mechanism as decentralized and will disclose material control retained by the project team.</p>
+
+<h2>12. Legal and Identity Disclosure</h2>
+<p>ASTRAL Stablecoin is an independent crypto project. It is not issued by, sponsored by, endorsed by or otherwise affiliated with Tether Limited. The use of the on-chain name <strong>Tether USD</strong> and symbol <strong>USDT-</strong> is recorded solely to identify the existing deployed contract and should not be interpreted as an association with Tether or its USDT product.</p>
+<p>This document describes a technical project and its intended development direction. It is not an offer, solicitation, financial guarantee or promise of a fixed market price.</p>
+<p>The project does not currently claim that each token is redeemable for one US dollar or that its market price can never vary unless those mechanisms have actually been implemented, funded and publicly documented.</p>
+
 <h2>13. Official Information</h2>
-<p>Official website: To be published<br>Official email: To be published/verified<br>Official social channels: To be published/verified</p>
-</body></html>
+<p><strong>Project:</strong> ASTRAL Stablecoin<br>
+<strong>Official website:</strong> <a href="https://studio-creatif-design.base44.app">https://studio-creatif-design.base44.app</a><br>
+<strong>Founder / project identity:</strong> Satoshi napasdmoto<br>
+<strong>Official social channels:</strong> Not yet established<br>
+<strong>Contract:</strong> <code>TTDs25SXfvxUpQcVhjSLbzBETNScSdMrfy</code><br>
+<strong>Network:</strong> TRON / TRC-20</p>
+
+<h2>14. Publication Status</h2>
+<p>This document is a living technical white paper. Project details may be updated as the protocol develops. Material changes should be dated and communicated through official project channels.</p>
+</body>
+</html>
